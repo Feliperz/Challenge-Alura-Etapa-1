@@ -1,0 +1,202 @@
+body{
+    background-color: #E9ECF8;
+}
+header{
+   display: flex;
+   
+}
+.logo{
+    margin: 2em 0 2em 2em;
+    scale: 70%;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 75vh;
+    margin: 0 2% 5% 10%;
+}
+
+.entrada{
+    flex: 60%;
+    
+}
+.textInput{
+    width: 95%;
+    height: 80%;
+}
+.textInput textarea{
+    
+    color: #072B61;
+    width: 100%;
+    height: 80%;
+    padding: 1em 0 0 1em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 2em;
+    resize: none;
+}
+.container img{
+    display: inline-block;
+    margin-right: 3px;
+}
+.container p{
+    display: inline-block;
+}
+.buttonsContainer{
+    margin-top: 1em;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.encriptarButton,.desencriptarButton{
+   border-radius: 2em;
+    width: 50%;
+    height: 4.2em;
+    font-size: 1.2em;
+}
+.encriptarButton{
+    margin-right: 2em;
+    color:white;
+    background-color: #072B61;
+}
+
+.encriptarButton:hover{
+    background-color: #072B50;
+    cursor: pointer;
+}
+
+.desencriptarButton{
+    color: #356EA9;
+    border: 3px solid #356EA9;
+}
+.desencriptarButton:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+.salida{
+    flex: 40%;
+    margin-right:7em;
+    background-color: white;
+    border-radius: 7em;
+}
+
+.contentPresentation{
+    margin: auto;
+    width: 70%;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    
+}
+.contentPresentation img {
+    
+    margin-top: 4em;
+    margin-bottom: 2em;
+    flex: 1;
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+    object-fit: contain; /* Ajusta el tamaño de la imagen */
+}
+
+.contentPresentation h2 {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #343A40;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.contentPresentation p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #343A40;
+    margin-bottom: 5px;
+}
+
+
+
+.contentResult{
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    height: 100%;
+
+}
+
+.contentResult div{
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+.textResult{
+    flex:80%;
+    font-size: 2em;
+    margin: 4em 2.4em 0 4em;
+    background-color: transparent;
+    user-select: none; /* Evita que el contenido sea seleccionable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: text; /* Cambia el cursor */
+    border: 1px solid transparent; /* Oculta el borde */
+    resize: none; /* Evita que se pueda redimensionar */
+    background-color: transparent; /* Fondo transparente */
+    outline: none; /* Quita el contorno de selección al hacer clic */
+}
+.copyButton{
+    
+    margin: auto;
+    border-radius: 2em;
+    width: 60%;
+    height: 4.2em;
+    font-size: 1.2em;
+    
+}
+.copyButton:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+.contentResult {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .container{
+        flex-direction: column; /* Apila los elementos verticalmente */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        margin-left: 0;
+    
+    }
+    .entrada{
+        margin-left: 2em;
+        flex: 70%;
+        width: 80%;
+    }
+    .salida{
+        flex:30%;
+        width: 80%;
+        margin: 5em 0 0 0;
+    }
+    .contentPresentation{
+        margin: 0 auto;
+    }
+    .contentPresentation img{
+        display: none;
+    }
+  }

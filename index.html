@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Felipe Ramirez Cruz">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Styles.css">
+        <title>Encriptador</title>
+        
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="Images/Logo.png">
+        </header>
+        <main class="container">
+            <section class="entrada">
+                <div class="textInput">
+                    <textarea class="textToEncriptar" placeholder="Ingrese su Texto Aqui"></textarea>
+                </div>
+                <img src="Images/bi_exclamation-circle-fill.png">
+                <p>Solo letras minusculas y sin acentos</p>
+                <div class="buttonsContainer">
+                    <button class="encriptarButton">Encriptar</button>
+                    <button class="desencriptarButton">Desencriptar</button>    
+                </div>
+                
+
+            </section>
+            <section class="salida">
+                <div class="contentPresentation">
+                    <img src="Images/Muñeco.png">
+                    <h2>Ningun mensaje fue encotrado</h1>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>     
+                </div>
+
+                <div class="contentResult">
+                    <textarea class="textResult" readonly>ejemplo</textarea>
+                
+                    <div>
+                        <button class="copyButton">Copiar</button>
+                    </div>
+
+                    
+                </div>
+                
+            </section>
+        </main>
+
+    </body>
+    
+    <script src="script.js"></script>
+    </html>
